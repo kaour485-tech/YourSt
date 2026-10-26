@@ -1,3 +1,5 @@
 all:
-	@echo Static site: no build step required.
+	@mkdir -p dist/shots
+	@cp index.html script.js styles.css dist/
+	@cp shots/*.png dist/shots/
 

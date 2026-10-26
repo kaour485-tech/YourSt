@@ -1,0 +1,119 @@
+﻿<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14110f">
+<title>صفحة منتج + لوحة تحكم + طلبات في Google Sheets | نسخة مستقلة لمتجرك</title>
+<meta name="description" content="نظام لبيع منتج واحد بالدفع عند الاستلام: صفحة هبوط عربية، لوحة تحكم تعدّل منها السعر والصور، وطلبات تُحفظ في Google Sheets. نسخة مستقلة لكل متجر.">
+<meta property="og:title" content="صفحة منتج + لوحة تحكم + طلبات في Google Sheets">
+<meta property="og:description" content="نسخة مستقلة لمتجرك بخدماتك وبياناتك.">
+<meta property="og:image" content="shots/landing.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="wrap nav"><a class="brand" href="#top">متجرك بنقرة</a><a class="btn btn-line" href="#order">اطلب نسختك</a></header>
+<main id="top">
+<div class="wrap hero">
+  <div>
+    <h1>صفحة لبيع منتجك، ولوحة تحكم، وطلباتك في Google Sheets</h1>
+    <p class="lead">نسخة مستقلة لمتجرك بخدماتك وبياناتك. تعدّل السعر والصور والنصوص بنفسك من اللوحة، وتستقبل طلبات الدفع عند الاستلام في جدول يخصك.</p>
+    <div class="cta-row"><a class="btn btn-main" href="#order">اطلب نسختك</a><a class="btn btn-line" href="#demo">شاهد النظام</a></div>
+    <p class="note">مصمم لبيع منتج واحد في كل نسخة، ويمكنك ضبط العملة والمدن والدولة من اللوحة.</p>
+  </div>
+  <div class="shot"><img src="shots/landing.png" alt="صفحة هبوط لمنتج مصباح قراءة كمثال" width="1379" height="766"></div>
+</div>
+
+<div class="band" id="demo"><section class="wrap">
+  <div class="head"><h2>ما الذي ستحصل عليه</h2><p>اللقطات من نسخة تعمل حالياً (منتج تجريبي).</p></div>
+  <div class="row">
+    <div class="txt"><h3>صفحة هبوط للزوار</h3><p>تعرض المنتج والصور والسعر والمميزات والأسئلة الشائعة، وفيها نموذج طلب بملخص يحسب الكمية والتوفير.</p></div>
+    <div class="shot"><img loading="lazy" src="shots/form.png" alt="نموذج الطلب وملخصه" width="1208" height="809"></div>
+  </div>
+  <div class="row">
+    <div class="txt"><h3>لوحة تحكم لصاحب المتجر</h3><p>بعد تسجيل الدخول تعدّل بنفسك:</p><ul><li>الاسم والسعر والخصم والعملة والكمية القصوى</li><li>الصور والمميزات والأسئلة الشائعة</li><li>الولايات أو المدن ووسائل التواصل</li><li>رسالة الشكر وعرض إضافي بعد الطلب</li></ul><p>تعديل بيانات المنتج لا يحتاج إعادة نشر الكود.</p></div>
+    <div class="shot"><img loading="lazy" src="shots/dashboard.png" alt="لوحة التحكم" width="1242" height="983"></div>
+  </div>
+  <div class="row">
+    <div class="txt"><h3>الطلبات في Google Sheets</h3><p>كل طلب يُضاف صفاً في جدول يخصك، وتراه في اللوحة مع بحث وتصفية، وتغيّر حالته فيتحدث الجدول. تتحقق اللوحة من الطلبات الجديدة كل 30 ثانية وهي مفتوحة.</p></div>
+    <div class="shot"><img loading="lazy" src="shots/orders.png" alt="قائمة الطلبات في اللوحة" width="1229" height="984"></div>
+  </div>
+  <div class="row">
+    <div class="txt"><h3>مساعد ذكي اختياري</h3><p>يقترح نصوص المنتج ومميزاته بعد أسئلة بسيطة، ولا يحفظ شيئاً قبل موافقتك. راجع النص دائماً قبل النشر لأنه قد يخطئ. يحتاج مفتاح Gemini خاصاً بك.</p></div>
+    <div class="shot"><img loading="lazy" src="shots/ai.png" alt="المساعد الذكي" width="998" height="779"></div>
+  </div>
+</section></div>
+
+<section class="wrap">
+  <div class="head"><h2>كيف يعمل خلف الكواليس</h2></div>
+  <ol class="flow">
+    <li><b>الزائر يطلب</b>من نموذج الصفحة.</li>
+    <li><b>الخادم يرسل الطلب</b>إلى Google Apps Script.</li>
+    <li><b>صف جديد</b>في جدول الطلبات.</li>
+    <li><b>تراه في اللوحة</b>وتغيّر حالته.</li>
+  </ol>
+  <p class="note">الاستضافة على Vercel، وإعدادات المنتج والصور على Supabase، والطلبات على Google Sheets. لكل متجر خدماته ومفاتيحه المنفصلة حتى لا تختلط البيانات.</p>
+</section>
+
+<div class="band"><section class="wrap" id="plans">
+  <div class="head"><h2>الباقات</h2><p>ترخيص استخدام نسخة مستقلة لمتجر واحد. الأسعار بالدولار الأمريكي، وتُدفع بعملتك بالتفاهم عبر واتساب.</p></div>
+  <div class="plans">
+    <div class="plan">
+      <h3>الباقة الأساسية</h3><div class="n"><span data-price="basic">49</span> <small>دولار</small></div>
+      <ul><li>ملفات النظام ودليل الإعداد</li><li>الاستخدام لمتجر واحد</li><li>تعديل المنتج من اللوحة</li><li class="x">لا يشمل إنشاء الحسابات والربط</li></ul>
+      <a class="btn btn-line" href="#order" data-pick="basic">اختر الأساسية</a>
+    </div>
+    <div class="plan best">
+      <h3>الباقة الكاملة</h3><div class="n"><span data-price="full">149</span> <small>دولار</small></div>
+      <ul><li>كل ما في الأساسية</li><li>إعداد Supabase وGoogle Sheets وVercel لمتجرك</li><li>إدخال منتجك وصوره</li><li>طلب تجريبي واختبار قبل التسليم</li><li>شرح استخدام اللوحة</li></ul>
+      <a class="btn btn-main" href="#order" data-pick="full">اختر الكاملة</a>
+    </div>
+  </div>
+  <p class="note">حدّد بالاتفاق المكتوب: مدة الدعم والتحديثات، ومن يملك الحسابات، وما يحدث للبيانات عند توقف أي خدمة.</p>
+</section></div>
+
+<section class="wrap">
+  <div class="head"><h2>ما يجب أن تعرفه قبل الشراء</h2></div>
+  <ul class="limits">
+    <li><b>منتج واحد لكل نسخة.</b> ليس متجراً بعدة منتجات ولا منصة تدير عدة متاجر.</li>
+    <li><b>التكاليف الخارجية على حسابك.</b> الدومين والاستضافة وSupabase وGoogle. استضافة Vercel المجانية مخصصة للاستخدام غير التجاري، والمتجر التجاري يحتاج خطة مدفوعة، فراجع الأسعار الحالية عند Vercel.</li>
+    <li><b>التنبيهات تعمل واللوحة مفتوحة.</b> ليست إشعارات تصلك بعد إغلاق المتصفح.</li>
+    <li><b>لا يوجد تتبع إعلاني جاهز.</b> بكسل فيسبوك وتيك توك يُضافان لاحقاً بمعرّفك أنت.</li>
+    <li><b>الطلبات تعتمد على Google.</b> توفر الخدمة وصلاحياتها يؤثران في وصول الطلبات.</li>
+  </ul>
+</section>
+
+<div class="band"><section class="wrap">
+  <div class="head"><h2>أسئلة قبل الطلب</h2></div>
+  <div class="faq">
+    <details><summary>هل أحتاج خبرة برمجية؟</summary><p>لا لاستخدام اللوحة اليومية. الإعداد الأول (الحسابات والربط) تتولاه الباقة الكاملة، أو تتبع فيه الدليل في الأساسية.</p></details>
+    <details><summary>هل أغيّر العملة والمدن لبلدي؟</summary><p>نعم، من اللوحة (العملة والولايات أو المدن ونص الضمان). أخبرني ببلدك لنتأكد من صيغة الهاتف.</p></details>
+    <details><summary>هل بياناتي مشتركة مع متاجر أخرى؟</summary><p>لا. لكل نسخة قاعدة بيانات وجدول ومفاتيح خاصة بها.</p></details>
+    <details><summary>هل أستطيع بيع النظام لغيري؟</summary><p>لا، الترخيص لاستخدامك الخاص. تفاصيله تُكتب في الاتفاق.</p></details>
+  </div>
+</section></div>
+
+<section class="wrap" id="order">
+  <div class="head"><h2>اطلب نسختك</h2><p>املأ البيانات وسأتواصل معك على واتساب خلال ساعات العمل.</p></div>
+  <form id="lead" novalidate>
+    <div><label for="name">الاسم الكامل *</label><input id="name" name="name" autocomplete="name" required></div>
+    <div><label for="phone">رقم واتساب مع رمز الدولة *</label><input id="phone" name="phone" inputmode="tel" dir="ltr" placeholder="+9665XXXXXXXX" required></div>
+    <div><label for="country">الدولة *</label>
+      <select id="country" name="country" required><option value="">اختر دولتك</option><option>الجزائر</option><option>المغرب</option><option>تونس</option><option>ليبيا</option><option>مصر</option><option>السودان</option><option>السعودية</option><option>الإمارات</option><option>الكويت</option><option>قطر</option><option>البحرين</option><option>عمان</option><option>العراق</option><option>الأردن</option><option>فلسطين</option><option>لبنان</option><option>سوريا</option><option>اليمن</option><option>موريتانيا</option><option>أخرى</option></select></div>
+    <div><label for="pkg">الباقة</label><select id="pkg" name="package"><option value="full">الكاملة</option><option value="basic">الأساسية</option><option value="ask">لست متأكداً</option></select></div>
+    <div><label for="msg">ما المنتج الذي ستبيعه؟ (اختياري)</label><textarea id="msg" name="message" rows="3"></textarea></div>
+    <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn btn-main" type="submit" id="send">أرسل الطلب</button>
+    <div class="msg" id="status" role="status"></div>
+  </form>
+</section>
+</main>
+<footer class="wrap">© <span id="y"></span> متجرك بنقرة. ترخيص استخدام لمتجر واحد.</footer>
+<div class="sticky"><a class="btn btn-main" href="#order">اطلب نسختك</a></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
+
+

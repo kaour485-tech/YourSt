@@ -22,7 +22,7 @@ function trackLeadConversion(pkg) {
   window.dataLayer.push({ event: 'lead_submitted', ...detail });
   window.dispatchEvent(new CustomEvent('lead_submitted', { detail }));
   if (window.fbq) fbq('track', 'Lead', { content_name: pkg });
-  if (window.ttq && typeof window.ttq.track === 'function') ttq.track('SubmitForm', { content_name: pkg });
+  if (window.ttq && typeof window.ttq.track === 'function') ttq.track('Lead', { content_name: pkg });
 }
 document.querySelectorAll('[data-pick]').forEach(a => a.addEventListener('click', () => {
   document.getElementById('pkg').value = a.dataset.pick; track('select_package', { package: a.dataset.pick });

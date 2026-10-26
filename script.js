@@ -1,7 +1,7 @@
 ﻿/* ===== إعدادات تعدّلها أنت ===== */
 const CONFIG = {
   WHATSAPP: '213696741267',          // رقمك بالصيغة الدولية بدون +
-  LEAD_ENDPOINT: 'https://script.google.com/macros/s/AKfycbzHOzwrNpI2Hbk-yW6cJAh8uCNzwy4QVl4whueiUL8XFn2JWFtOX8ktWUT-XCV1_wQ/exec',                 // الصق هنا رابط تطبيق Apps Script المنتهي بـ /exec
+  LEAD_ENDPOINT: 'https://script.google.com/macros/s/AKfycbxFhuiv6hEpdFTLpXHy6AXRuhnccJu4HpR7JhP95FBdoMX3938UBasCaquXT9DPAOQ5/exec',                 // الصق هنا رابط تطبيق Apps Script المنتهي بـ /exec
   GA_ID: '',                         // معرّف Google Analytics 4 مثل G-XXXXXXX (اختياري)
   PRICES: { basic: 49, full: 149 }  // أسعار الباقات بالدولار
 };
